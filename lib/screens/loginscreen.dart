@@ -86,6 +86,7 @@ class _LoginscreenState extends State<Loginscreen> {
       body: LayoutBuilder(
         builder: (BuildContext ctx, BoxConstraints constraint){
           return SingleChildScrollView(
+            physics : const ClampingScrollPhysics(),
             child: ConstrainedBox(
               constraints: BoxConstraints(minHeight: constraint.maxHeight),
               child: IntrinsicHeight(
